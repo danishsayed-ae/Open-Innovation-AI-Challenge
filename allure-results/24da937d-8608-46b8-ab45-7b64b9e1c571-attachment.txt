@@ -1,0 +1,1 @@
+A snapshot doesn't exist at /Users/danish/Downloads/challenge updated/tests/visualRegression.spec.ts-snapshots/qna-page-webkit-darwin.png, writing actual.
