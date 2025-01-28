@@ -15,7 +15,7 @@ export class QNAPage {
      */
     async uploadSupportedSingleFile(filePath, fileName) {
         await this.page.locator('input[type="file"]').setInputFiles(filePath);
-        const uploadButton = this.page.locator('.items-center.space-x-2 button').first();  
+        const uploadButton = this.page.locator('.items-center.space-x-2 button').first();
         await uploadButton.click();
         await expect(this.page.locator('.space-x-2.flex-grow .text-sm')).toHaveText(fileName);
     }

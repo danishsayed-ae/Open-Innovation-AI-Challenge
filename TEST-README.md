@@ -43,9 +43,9 @@ npx playwright test fileUpload.spec.ts --project=webkit
 
 ### To run the test for chatbot feature
 npx playwright test chatbot.spec.ts --project=chromium
-npx playwright test chatbot.spec.ts --project=firefox
-npx playwright test chatbot.spec.ts --project=webkit 
 
+### To run the test for visual regression test
+npx playwright test visualRegression.spec.ts
 
 ### To serve the report in web browser
 allure serve allure-results
