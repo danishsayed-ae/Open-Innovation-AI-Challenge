@@ -2,6 +2,44 @@
 
 This repository contains automated tests to verify the functionality of the file upload feature. It covers both positive and negative scenarios, along with some identified bugs.
 
+## Design Approach Overview
+
+This framework follows the Page Object Model (POM) design pattern, with deliberate design choices to prioritize debugging, simplicity, collaboration, and reusability. Below is an explanation of the approach and its benefits:
+
+### Key Features of the Design
+	1.	Locators Inside Methods for Easier Debugging
+	•	Locators are purposefully kept inside the methods where they are used.
+	•	This simplifies debugging, as the locator and its corresponding logic are in one place, avoiding unnecessary abstraction.
+	•	When the UI changes, it’s easier to identify and update the affected locators without sifting through multiple files.
+	2.	Adherence to the DRY Principle
+	•	DRY (Don’t Repeat Yourself) ensures that reusable logic and actions (e.g., filling forms, clicking buttons) are encapsulated into methods shared across the framework.
+	•	This reduces redundancy and maintenance overhead while ensuring consistency in test execution.
+	3.	KISS Principle in Action
+	•	KISS (Keep It Stupid Simple) is applied to ensure that the framework remains straightforward:
+	•	The design is easy to understand, even for junior QA engineers.
+	•	By avoiding over-engineering, the test framework is lightweight and intuitive to work with.
+	4.	Dynamic Test Data
+	•	Test data is dynamically driven directly from the test case specification files.
+	•	This eliminates hardcoding, ensures flexibility, and enables seamless updates to test cases without modifying the core framework.
+	5.	Enhanced Collaboration
+	•	This approach is highly accessible to junior QA automation engineers, enabling them to contribute effectively without needing extensive knowledge of advanced design patterns.
+	•	Collaboration is streamlined, and test preparation becomes significantly faster, as the framework is easy to grasp and extend.
+
+### Advantages of This Approach
+	1.	Improved Debugging
+	•	Locators are scoped within their respective methods, making it easier to trace and resolve issues when tests fail.
+	2.	Reduced Maintenance Effort
+	•	UI changes require minimal updates since common actions and locators are centralized in reusable methods.
+	3.	Accelerated Test Writing
+	•	Tests are intuitive, and the inclusion of dynamic test data allows for rapid test creation and execution.
+	4.	Simplified Collaboration
+	•	The design supports both senior and junior engineers, enabling the entire QA team to contribute efficiently.
+	•	Onboarding new engineers is quicker since the framework is designed to be easy to understand.
+	5.	Faster Refactoring and Scalability
+	•	The framework is flexible and can adapt to changing requirements or new test scenarios without introducing unnecessary complexity.
+	6.	Dynamic Test Execution
+	•	Using test case specification files to drive test data ensures flexibility, enabling tests to adapt dynamically to varying input scenarios.
+
 
 ## Bugs
 
