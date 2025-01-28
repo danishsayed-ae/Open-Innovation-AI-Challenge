@@ -74,28 +74,28 @@ This framework follows the Page Object Model (POM) design pattern, with delibera
 
 ## Installation Instructions
 
-### To install Playwright for end-to-end testing:
+1. To install Playwright for end-to-end testing:
 npm init playwright@latest
 
-### To Install Allure
+2. To Install Allure
 brew install allure
 
-### To install allure report in playwright
+3. To install allure report in playwright
 npm i -D @playwright/test allure-playwright
 
-### To generate test result as report
+4. To generate test result as report
 allure generate allure-results -o allure-report --clean 
 
-### To run the test for file upload feature
+5. To run the test for file upload feature
 npx playwright test fileUpload.spec.ts --project=chromium
 npx playwright test fileUpload.spec.ts --project=firefox
 npx playwright test fileUpload.spec.ts --project=webkit
 
-### To run the test for chatbot feature
+6. To run the test for chatbot feature
 npx playwright test chatbot.spec.ts --project=chromium
 
-### To run the test for visual regression test
+7. To run the test for visual regression test
 npx playwright test visualRegression.spec.ts
 
-### To serve the report in web browser
+8. To serve the report in web browser
 allure serve allure-results
